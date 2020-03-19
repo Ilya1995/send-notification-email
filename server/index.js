@@ -12,8 +12,6 @@ app.get('/startServer', function(req, res) {
   res.send(JSON.stringify({ time }));
 });
 app.get('/*', function(req, res) {
-  console.log(1);
-
   res.sendFile(path.join(__dirname, '../build', 'index.html'));
 });
 
