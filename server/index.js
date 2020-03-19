@@ -4,7 +4,7 @@ console.log(time);
 
 const app = express();
 const path = require('path');
-const port = 5000;
+const port = 3000;
 
 app.use(express.static(path.join(__dirname, '../build')));
 
