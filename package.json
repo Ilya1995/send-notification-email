@@ -2,7 +2,7 @@
   "name": "send-notification-email",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://ilya1995.github.io/emails",
+  "homepage": "http://ilya1995.github.io/send-notification-email",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@material-ui/icons": "^4.9.1",
