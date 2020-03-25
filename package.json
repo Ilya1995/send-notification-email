@@ -1,8 +1,7 @@
 {
   "name": "send-notification-email",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "private": true,
-  "homepage": "http://ilya1995.github.io/send-notification-email",
   "dependencies": {
     "@material-ui/core": "^4.9.5",
     "@material-ui/icons": "^4.9.1",
@@ -11,6 +10,7 @@
     "email-validator": "^2.0.4",
     "express": "^4.17.1",
     "firebase": "^7.11.0",
+    "nodemailer": "4.6.8",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-notifications": "^1.5.0",
@@ -20,21 +20,14 @@
     "redux": "^4.0.5"
   },
   "scripts": {
-    "start": "node server/index.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "server": "node server/index.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "server": "node server/index.js"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ],
-  "devDependencies": {
-    "gh-pages": "^2.2.0"
-  }
+  ]
 }

@@ -9,22 +9,17 @@ export const StartServer = () => {
       locale: ru
     })
   );
+
   useEffect(() => {
     (async () => {
       try {
         const response = await fetch('/startServer');
         const data = await response.json();
-        console.log(data);
 
         setDate(
           format(parseISO(data.time), "d MMMM 'в' k:mm:ss", {
             locale: ru
           })
-        );
-        console.log(
-          `Сервер запущен ${format(new Date(), "d MMMM 'в' k:mm:ss", {
-            locale: ru
-          })}`
         );
       } catch (err) {
         console.log('Error receiving start server time');

@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
-import {
-  useFirebase,
-  useFirebaseConnect,
-  isLoaded,
-  isEmpty
-} from 'react-redux-firebase';
+import { useFirebase, useFirebaseConnect } from 'react-redux-firebase';
 import Button from '@material-ui/core/Button';
 import AddCircleOutline from '@material-ui/icons/AddCircleOutline';
 import IconButton from '@material-ui/core/IconButton';
